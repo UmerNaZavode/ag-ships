@@ -8,18 +8,20 @@
  * @package ag-ships
  */
 
-if (! defined('_S_VERSION')) {
+if (!defined('_S_VERSION')) {
     // Replace the version number of the theme on each release.
     define('_S_VERSION', '2.0.0');
 }
 
-require_once __DIR__."/inc/theme-setup.php";
+include_once __DIR__ . '/vendor/autoload.php';
 
-require_once __DIR__."/inc/theme-widgets.php";
+require_once __DIR__ . "/inc/theme-setup.php";
 
-require_once __DIR__."/inc/theme-styles.php";
+require_once __DIR__ . "/inc/theme-widgets.php";
 
-require_once __DIR__."/inc/theme-scripts.php";
+require_once __DIR__ . "/inc/theme-styles.php";
+
+require_once __DIR__ . "/inc/theme-scripts.php";
 
 require get_template_directory() . '/inc/custom-header.php';
 
