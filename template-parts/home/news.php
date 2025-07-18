@@ -1,73 +1,40 @@
+<?php
+$news = get_field("news");
+$title = $news["title"];
+$link = $news["link"];
+$items = $news["items"];
+?>
+
 <section class="news">
     <div class="news__main container">
         <header class="news__header">
-            <h3 class="news__title title">Новости</h3>
-            <a href="" class="news__link title--link">Все новости</a>
+            <h3 class="news__title title"><?php echo $title; ?></h3>
+            <a href="" class="news__link title--link"><?php echo $link; ?></a>
         </header>
         <div class="news__body">
             <ul class="news__list">
-                <li class="news__item">
-                    <img src="/assets/news-1-BQIvnuvI.jpg" width="306" height="330" alt=""
-                         class="news__item-img">
-                    <p class="news__item-date" datetime="2022-12-29">29 декабря 2022 Г.</p>
-                    <div class="news__item-body">
-                        <a href="/" class="news__item-link">
-                            <h4 class="news__item-subtitle">Elementum ipsum eget venenatis at rutrum aenean.
-                                Neque gravida nunc dolor
-                                tellus ac tellus. Turpis.</h4>
-                        </a>
-                        <p class="news__item-description">Euismod nunc vel sit orci odio eget semper pharetra
-                            risus. Nibh pharetra
-                            neque amet enim egestas tincidunt. Eu.</p>
-                    </div>
-                </li>
-                <li class="news__item">
-                    <img src="/assets/news-2-JNALU3kV.jpg" width="306" height="330" alt=""
-                         class="news__item-img">
-                    <p class="news__item-date" datetime="2022-12-20">20 декабря 2022 Г.</p>
-                    <div class="news__item-body">
-                        <a href="/" class="news__item-link">
-                            <h4 class="news__item-subtitle">Volutpat vehicula scelerisque consectetur nullam
-                                nunc vel. Sagittis enim
-                                feugiat maecenas.</h4>
-                        </a>
-                        <p class="news__item-description">Facilisis aliquam in velit nibh ipsum quis. Diam nulla
-                            fringilla etiam
-                            id et egestas dui odio. Lectus nam gravida.</p>
-                    </div>
-                </li>
-                <li class="news__item">
-                    <img src="/assets/news-3-Clb2ESyP.jpg" width="306" height="330" alt=""
-                         class="news__item-img">
-                    <p class="news__item-date" datetime="2022-12-14">14 декабря 2022 Г.</p>
-                    <div class="news__item-body">
-                        <a href="/" class="news__item-link">
-                            <h4 class="news__item-subtitle">Etiam donec fames sed nunc senectus ut eget. Nibh
-                                felis eget.</h4>
-                        </a>
-                        <p class="news__item-description">Volutpat egestas porttitor duis purus quam est quam.
-                            Tempor aliquam vel
-                            arcu
-                            euismod. Mattis ullamcorper.</p>
-                    </div>
-                </li>
-                <li class="news__item">
-                    <img src="/assets/news-4-DJDksOPC.jpg" width="306" height="330" alt=""
-                         class="news__item-img">
-                    <p class="news__item-date" datetime="2022-12-29">29 декабря 2022 Г.</p>
-                    <div class="news__item-body">
-                        <a href="/" class="news__item-link">
-                            <h4 class="news__item-subtitle">Amet volutpat urna vitae vitae. Varius accumsan
-                                mattis egestas sagittis
-                                arcu
-                                libero. Sit at.</h4>
-                        </a>
-                        <p class="news__item-description">Vestibulum ut justo sagittis eu. Tincidunt viverra
-                            odio mauris ut nec
-                            tellus
-                            ante. Sit ac etiam sed vestibulum.</p>
-                    </div>
-                </li>
+
+                <?php foreach($items as $item): ?>
+                  <?php
+                      $image = $item["image"];
+                      $date = $item["date"];
+                      $subtitle = $item["subtitle"];
+                      $description = $item["description"];
+                  ?>
+
+                    <li class="news__item">
+                        <img src="<?php echo $image; ?>" width="306" height="330" alt=""
+                             class="news__item-img">
+                        <p class="news__item-date" datetime="2022-12-29"><?php echo $date; ?></p>
+                        <div class="news__item-body">
+                            <a href="/" class="news__item-link">
+                                <h4 class="news__item-subtitle"><?php echo $subtitle; ?></h4>
+                            </a>
+                            <p class="news__item-description"><?php echo $description; ?></p>
+                        </div>
+                    </li>
+
+                <?php endforeach; ?>
             </ul>
         </div>
     </div>
