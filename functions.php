@@ -13,7 +13,7 @@ if (!defined('_S_VERSION')) {
     define('_S_VERSION', '2.0.0');
 }
 
-include_once __DIR__ . '/vendor/autoload.php';
+//include_once __DIR__ . '/vendor/autoload.php';
 
 require_once __DIR__ . "/inc/theme-setup.php";
 
