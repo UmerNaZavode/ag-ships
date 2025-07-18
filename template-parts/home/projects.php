@@ -67,4 +67,3 @@ $slider = $projects["slider"];
         </div>
     </div>
 </section>
-

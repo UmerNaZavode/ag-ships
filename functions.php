@@ -37,7 +37,7 @@ if (defined('JETPACK__VERSION')) {
 
 function remove_pages_editor()
 {
-    $ids = [2];
+    $ids = [2, 91, 117];
     if (in_array(get_the_ID(), $ids)) {
         remove_post_type_support('page', 'editor');
     } // end if

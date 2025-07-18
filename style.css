@@ -23,45 +23,45 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
 @font-face {
-	font-family: 'Helvetica Neue Cyr';
-	src: url('/assets/fonts/HelveticaNeueCyr-Light.woff2') format('woff2');
-	font-weight: 300;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'Helvetica Neue Cyr';
+    src: url('assets/fonts/HelveticaNeueCyr-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: 'Helvetica Neue Cyr';
-	src: url('/assets/fonts/HelveticaNeueCyr-Normal.woff2') format('woff2');
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'Helvetica Neue Cyr';
+    src: url('assets/fonts/HelveticaNeueCyr-Normal.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: 'Helvetica Neue Cyr';
-	src: url('/assets/fonts/HelveticaNeueCyr-Medium.woff2') format('woff2');
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'Helvetica Neue Cyr';
+    src: url('assets/fonts/HelveticaNeueCyr-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: 'Helvetica Neue Cyr';
-	src: url('/assets/fonts/HelveticaNeueCyr-Bold.woff2') format('woff2');
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'Helvetica Neue Cyr';
+    src: url('assets/fonts/HelveticaNeueCyr-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: 'Helvetica Neue Cyr';
-	src: url('/assets/fonts/HelveticaNeueCyr-Black.woff2') format('woff2');
-	font-weight: 900;
-	font-style: normal;
-	font-display: swap;
+    font-family: 'Helvetica Neue Cyr';
+    src: url('assets/fonts/HelveticaNeueCyr-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
 }
 
 .hero__body-title {
-	font-family: 'Helvetica Neue Cyr', sans-serif;
+    font-family: 'Helvetica Neue Cyr', sans-serif;
 }
