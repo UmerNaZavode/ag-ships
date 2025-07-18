@@ -26,6 +26,9 @@ function ag_ships_setup()
     register_nav_menus(
         array(
             'menu-1' => esc_html__('Header', 'ag-ships'),
+            'footer-left' => esc_html__('Footer Left', 'ag-ships'),
+            'footer-center' => esc_html__('Footer Center', 'ag-ships'),
+            'footer-right' => esc_html__('Footer Right', 'ag-ships'),
         )
     );
 
