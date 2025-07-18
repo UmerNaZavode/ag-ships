@@ -17,6 +17,8 @@ if (!defined('_S_VERSION')) {
 
 require_once __DIR__ . "/inc/theme-setup.php";
 
+require_once __DIR__ . "/inc/acf.php";
+
 require_once __DIR__ . "/inc/theme-widgets.php";
 
 require_once __DIR__ . "/inc/theme-styles.php";
@@ -33,6 +35,11 @@ require get_template_directory() . '/inc/customizer.php';
 
 if (defined('JETPACK__VERSION')) {
     require get_template_directory() . '/inc/jetpack.php';
+}
+
+function clear_phone($phone)
+{
+    return preg_replace("/[^0-9]/", "", $phone);
 }
 
 function remove_pages_editor()

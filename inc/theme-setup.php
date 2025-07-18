@@ -25,7 +25,7 @@ function ag_ships_setup()
     // This theme uses wp_nav_menu() in one location.
     register_nav_menus(
         array(
-            'menu-1' => esc_html__('Primary', 'ag-ships'),
+            'menu-1' => esc_html__('Header', 'ag-ships'),
         )
     );
 
@@ -69,11 +69,12 @@ function ag_ships_setup()
     add_theme_support(
         'custom-logo',
         array(
-            'height'      => 250,
-            'width'       => 250,
-            'flex-width'  => true,
+            'height' => 250,
+            'width' => 250,
+            'flex-width' => true,
             'flex-height' => true,
         )
     );
 }
+
 add_action('after_setup_theme', 'ag_ships_setup');
