@@ -8,7 +8,7 @@ $spec_title = $activities['spec_title'];
 $spec_items = $activities['spec_items'];
 ?>
 
-<section class="activities">
+<section class="activities container">
   <div class="activities__inner container">
     <h1 class="visually-hidden">Перевозка газа</h1>
     <div class="activities__header">

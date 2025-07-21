@@ -17,20 +17,17 @@
   'walker' => '',
 ]); ?>
 
-<div class="footer__column">
-  <a href="/" class="footer__title">О компании</a>
-  <!-- <ul class="footer__list"> -->
-  <!--   <li class="footer__item"> -->
-  <!--     <a href="" class="footer__link">Профиль компании</a> -->
-  <!--   </li> -->
-  <!--   <li class="footer__item"> -->
-  <!--     <a href="" class="footer__link">История</a> -->
-  <!--   </li> -->
-  <!--   <li class="footer__item"> -->
-  <!--     <a href="" class="footer__link">Совет директоров</a> -->
-  <!--   </li> -->
-  <!--   <li class="footer__item"> -->
-  <!--     <a href="" class="footer__link">Контакты</a> -->
-  <!--   </li> -->
-  <!-- </ul> -->
-</div>
+<ul class="footer__list">
+  <!-- <li class="footer__item"> -->
+  <!--   <a href="" class="footer__link">Профиль компании</a> -->
+  <!-- </li> -->
+  <!-- <li class="footer__item"> -->
+  <!--   <a href="" class="footer__link">История</a> -->
+  <!-- </li> -->
+  <!-- <li class="footer__item"> -->
+  <!--   <a href="" class="footer__link">Совет директоров</a> -->
+  <!-- </li> -->
+  <!-- <li class="footer__item"> -->
+  <!--   <a href="" class="footer__link">Контакты</a> -->
+  <!-- </li> -->
+</ul>

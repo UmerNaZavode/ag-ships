@@ -44,7 +44,7 @@ function clear_phone($phone)
 
 function remove_pages_editor()
 {
-    $ids = [2, 91, 117];
+    $ids = [2, 91, 117, 160];
     if (in_array(get_the_ID(), $ids)) {
         remove_post_type_support('page', 'editor');
     } // end if
